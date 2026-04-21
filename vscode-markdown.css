@@ -1,6 +1,10 @@
 
 body {
     background-color: #fff9c4 !important;
+
+     border: 10px solid #9c27b0 !important;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 
