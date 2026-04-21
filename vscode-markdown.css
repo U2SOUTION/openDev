@@ -1,0 +1,26 @@
+/* 1. 일반 단락의 첫 글자(Drop Cap) 스타일 */
+p::first-letter {
+    font-size: 3.5em;       /* 글자 크기 (두 줄 높이) */
+    font-weight: 900;       /* 최대한 굵게 */
+    float: left;            /* 글자 주위로 텍스트 흐름 */
+    line-height: 1;         /* 줄 간격 조절 */
+    margin-right: 12px;     /* 다음 글자와의 여백 */
+    margin-top: 4px;        /* 상단 위치 미세 조정 */
+    color: #333;            /* 글자 색상 (취향껏 변경 가능) */
+    font-family:  "Arial Black", sans-serif; /* 굵기가 잘 표현되는 폰트 */
+}
+
+/* 2. 리스트(-), 인용문(>) 내의 텍스트는 효과 제외 (가독성 유지) */
+li p::first-letter, 
+blockquote p::first-letter {
+    font-size: inherit;
+    font-weight: inherit;
+    float: none;
+    margin: 0;
+}
+
+/* 3. 단락 사이가 겹치지 않게 정리 */
+p {
+    clear: both;
+    margin-bottom: 1.5em;
+}
