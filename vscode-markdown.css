@@ -1,3 +1,9 @@
+
+body {
+    background-color: #fff9c4 !important;
+}
+
+
 /* 1. 일반 단락의 첫 글자(Drop Cap) 스타일 */
 p::first-letter {
     font-size: 3.5em;       /* 글자 크기 (두 줄 높이) */
